@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  background-color: #f2f2f2;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  margin: 2rem auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.nav-bg-color {
+  background-color: #e3f2fd;
+}
+
+.navbar-brand,
+.collapse.navbar-collapse,
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-size: small;
+}
+
+.card {
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.user-nav {
+  width: 20rem;
+  margin: 2rem auto;
+}
+
+.form-box {
+  text-align: left;
+  padding: 1.5rem;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: rgb(35, 35, 35);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-box .form-group {
+  margin-bottom: 1rem;
+}
+
+.form-box .form-control {
+  background: #000000;
+  color: #fff;
+}
+
+.search-input {
+  height: 2rem;
+}
+
+main .notify-form {
+  width: 20rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+main .notify-form .btn {
+  margin-top: 1rem;
+  background: #1e1c1c;
+  color: #fff;
+}
+
+.navbar .notify-form {
+  flex-direction: row !important;
+  align-items: center;
+  width: 15rem;
+}
+.navbar .notify-form .btn {
+  background-color: #1e1c1c;
+  color: #fff;
+  border: 1px solid #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.header__logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: Quicksand;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li {
+  margin-left: 1rem;
+}
+
+.header nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+  font-family: Quicksand;
+}
+
+.header nav ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+.header nav ul li a.active {
+  background-color: #d4d4d4;
+}
+
+.notes-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 5rem;
+}
+
+.notes-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.notes-container h1 {
+  font-family: Quicksand;
+  font-weight: 600;
+}
+
+.notes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-content h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.note-content p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.note-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-footer p {
+  background: #e5e5e5;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-family: Quicksand;
+}
+.note-footer div {
+  display: flex;
+  justify-content: space-between;
+  width: 7rem;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 50px;
+  height: 35px;
+}
+
+.delete-button {
+  background-color: rgb(200 30 0 / 80%);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 50px;
+  height: 35px;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  background: rgb(255 255 255 / 80%);
+}
+
+.note-form__label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.note-form__input,
+.note-form__textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.note-form__button {
+  padding: 10px;
+  /* background-color: #d90874; */
+  background-color: #252424;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.new-note-container {
+  margin-top: 10rem;
+}
+
+.new-note-container h1 {
+  font-family: Quicksand;
+  font-weight: 500;
+}
+
+.find-note-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.find-note-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.search-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.note-container {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+}
+
+.error-container {
+  background-color: rgb(200 30 0 / 80%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 6rem;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.error-message {
+  color: white;
+  margin-top: revert-layer;
+}
+.error {
+  color: rgb(200 30 0 / 80%);
+  padding: 0;
+  margin: 0;
+}
+.loading-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+.loading-icon {
+  width: 50px;
+  height: 50px;
+  animation: rotate 2s linear infinite;
+}
+
+.loading-icon circle {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 8;
+  stroke-dasharray: 100, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  transform-origin: center;
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #111111;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.is-fetching{
+  margin-left: 10px;
+}
